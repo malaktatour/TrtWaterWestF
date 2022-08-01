@@ -49,6 +49,7 @@ public class RecyclerView_Config {
 
             //Setting values on Xml file
            // valueOne.setText(justice.getKey());
+            // comment contrl
             waterLevel.setText(justice.getValue());
             //waterLevel.setText(day.getDate());
            // valueThree.setText(Double.toString(day.GetUsedAmount()));
