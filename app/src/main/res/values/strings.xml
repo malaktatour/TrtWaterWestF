@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Water West App</string>
+
+    --App intro--
+    <string name="first_slide_title" translatable="false">Title 1</string>
+    <string name="second_slide_title" translatable="false">Title 2</string>
+    <string name="third_slide_title" translatable="false">Title 3</string>
+    <string name="fourth_slide_title" translatable="false">Title 4</string>
+
+    --Descriptions--
+    <string name="first_slide_desc" translatable="false">desc 1</string>
+    <string name="second_slide_desc" translatable="false">desc 2</string>
+    <string name="third_slide_desc" translatable="false">desc 3</string>
+    <string name="fourth_slide_desc" translatable="false">desc 4</string>
+
+
+    --Button--
+    <string name="skip_btn" translatable="false">Skip</string>
+    <string name="next_btn" translatable="false">Next</string>
+    <string name="let_get_started" translatable="false">Lets Get Started</string>
+
+</resources>

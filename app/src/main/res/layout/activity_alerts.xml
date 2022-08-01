@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#98CFDA"
+    tools:context=".alerts_activity">
+
+    <ImageView
+        android:id="@+id/ovalll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/oval"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomlogo"
+        app:layout_constraintEnd_toEndOf="@+id/endlogo"
+        app:layout_constraintStart_toStartOf="@+id/startlogo"
+        app:layout_constraintTop_toTopOf="@+id/toplogo" />
+
+    <ImageView
+        android:id="@+id/purr2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/photo_4"
+        android:transitionName="apple"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomlogo"
+        app:layout_constraintEnd_toEndOf="@+id/endlogo"
+        app:layout_constraintStart_toStartOf="@+id/startlogo"
+        app:layout_constraintTop_toTopOf="@+id/toplogo" />
+
+    <ImageView
+        android:id="@+id/backk"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rec"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomback"
+        app:layout_constraintEnd_toEndOf="@+id/endback"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/startback"
+        app:layout_constraintTop_toTopOf="@+id/topback"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+
+
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rec_green"
+        app:layout_constraintStart_toStartOf="@id/lay1start"
+        app:layout_constraintEnd_toEndOf="@id/lay1end"
+        app:layout_constraintTop_toTopOf="@id/lay1top"
+        app:layout_constraintBottom_toBottomOf="@id/lay1bottom"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lay1top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lay1bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lay1start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lay1end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rec_blue"
+        app:layout_constraintStart_toStartOf="@id/lay1start"
+        app:layout_constraintEnd_toEndOf="@id/lay1end"
+        app:layout_constraintTop_toTopOf="@id/lay2top"
+        app:layout_constraintBottom_toBottomOf="@id/lay2bottom"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lay2top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lay2bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rec_blue"
+        app:layout_constraintStart_toStartOf="@id/lay1start"
+        app:layout_constraintEnd_toEndOf="@id/lay1end"
+        app:layout_constraintTop_toTopOf="@id/lay3top"
+        app:layout_constraintBottom_toBottomOf="@id/lay3bottom"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lay3top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lay3bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.64" />
+
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rec_blue"
+        app:layout_constraintStart_toStartOf="@id/lay1start"
+        app:layout_constraintEnd_toEndOf="@id/lay1end"
+        app:layout_constraintTop_toTopOf="@id/lay4top"
+        app:layout_constraintBottom_toBottomOf="@id/lay4bottom"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lay4top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lay4bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+
+
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/toplogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startalertbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endalertbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomalertbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topalertbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.91" />
+
+
+
+
+
+
+
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="@id/bottomalertbtn"
+        app:layout_constraintEnd_toEndOf="@+id/endwaterusagebtn1"
+        app:layout_constraintStart_toStartOf="@+id/startwaterusagebtn1"
+        app:layout_constraintTop_toTopOf="@+id/topalertbtn"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startwaterusagebtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endwaterusagebtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.58" />
+
+    <ImageView
+        android:id="@+id/stamm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/oval"
+        app:layout_constraintBottom_toBottomOf="@id/bottomalertbtn"
+        app:layout_constraintEnd_toEndOf="@+id/endalert"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/startalert"
+        app:layout_constraintTop_toTopOf="@+id/topalertbtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startalert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endalert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/agrandir"
+        android:gravity="center"
+        android:text="Alerts"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/bottomwatertank"
+        app:layout_constraintEnd_toEndOf="@id/watertankend"
+        app:layout_constraintStart_toStartOf="@id/watertankstart"
+        app:layout_constraintTop_toTopOf="@id/topwatertank" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/watertankstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/watertankend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topwatertank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomwatertank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/remainingstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/remainingend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/remainingtop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.58" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/remainingbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tankstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.23" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tankend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tanktop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tankbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/waterstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/waterend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.71" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/watertop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/waterbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/todaystart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="just now !"
+        android:textColor="@color/teal_700"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:textStyle="bold"
+        android:fontFamily="@font/agrandir"
+        app:layout_constraintTop_toTopOf="@id/lay1top"
+        app:layout_constraintStart_toStartOf="@id/todaystart"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22/7/22"
+        android:textColor="@color/greydark_palette"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:textStyle="bold"
+        android:fontFamily="@font/agrandir"
+        app:layout_constraintTop_toTopOf="@id/lay2top"
+        app:layout_constraintStart_toStartOf="@id/todaystart"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17/9/21"
+        android:textColor="@color/greydark_palette"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:textStyle="bold"
+        android:fontFamily="@font/agrandir"
+        app:layout_constraintTop_toTopOf="@id/lay3top"
+        app:layout_constraintStart_toStartOf="@id/todaystart"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11/9/01"
+        android:textColor="@color/greydark_palette"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:textStyle="bold"
+        android:fontFamily="@font/agrandir"
+        app:layout_constraintTop_toTopOf="@id/lay4top"
+        app:layout_constraintStart_toStartOf="@id/todaystart"
+        />
+
+
+    <TextView
+        android:id="@+id/Layout1Status"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/agrandir"
+        android:gravity="center"
+        android:text="Water is Flowing!"
+        android:textColor="@color/teal_700"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/lay1bottom"
+        app:layout_constraintEnd_toEndOf="@id/lay1end"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/lay1start"
+        app:layout_constraintTop_toTopOf="@id/lay1top"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/agrandir"
+        android:gravity="center"
+        android:id="@+id/Layout2Status"
+        android:text="Water is Running low!"
+        android:textColor="@color/greydark_palette"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/lay2top"
+        app:layout_constraintBottom_toBottomOf="@id/lay2bottom"
+        app:layout_constraintEnd_toEndOf="@id/lay1end"
+        app:layout_constraintStart_toStartOf="@id/lay1start"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/agrandir"
+        android:gravity="center"
+        android:id="@+id/Layout3Status"
+        android:text="You might have a leak!"
+        android:textColor="@color/greydark_palette"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/lay3top"
+        app:layout_constraintBottom_toBottomOf="@id/lay3bottom"
+        app:layout_constraintEnd_toEndOf="@id/lay1end"
+        app:layout_constraintStart_toStartOf="@id/lay1start"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/agrandir"
+        android:gravity="center"
+        android:id="@+id/Layout4Status"
+        android:text="Water is Running low!"
+        android:textColor="@color/greydark_palette"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/lay4top"
+        app:layout_constraintBottom_toBottomOf="@id/lay4bottom"
+        app:layout_constraintEnd_toEndOf="@id/lay1end"
+        app:layout_constraintStart_toStartOf="@id/lay1start"
+        />
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endwaterusagebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.89" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/endwaterusagebtn"
+        app:layout_constraintTop_toTopOf="@id/lay1top"
+        android:fontFamily="@font/agrandir"
+        android:text="Active"
+        android:textColor="@color/teal_700"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/endwaterusagebtn"
+        app:layout_constraintTop_toTopOf="@id/lay2top"
+        android:fontFamily="@font/agrandir"
+        android:text="RESOLVED"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/endwaterusagebtn"
+        app:layout_constraintTop_toTopOf="@id/lay3top"
+        android:fontFamily="@font/agrandir"
+        android:text="RESOLVED"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/endwaterusagebtn"
+        app:layout_constraintTop_toTopOf="@id/lay4top"
+        android:fontFamily="@font/agrandir"
+        android:text="RESOLVED"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
