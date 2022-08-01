@@ -539,11 +539,23 @@
         app:layout_constraintStart_toStartOf="@+id/todaystart"
         app:layout_constraintTop_toTopOf="@+id/todaytop"
         />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/agrandir"
+        app:layout_constraintEnd_toEndOf="@+id/todayend"
+        app:layout_constraintStart_toStartOf="@+id/todaystart"
+        app:layout_constraintTop_toTopOf="@+id/todaybottom" />
+
+
     <TextView
         android:id="@+id/todayL"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="25L"
         android:gravity="start"
         android:textSize="36sp"
         android:textColor="@color/black"
@@ -552,6 +564,9 @@
         app:layout_constraintStart_toStartOf="@+id/todaystart"
         app:layout_constraintTop_toTopOf="@+id/todaybottom"
         />
+
+
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/todaystart"
         android:layout_width="wrap_content"

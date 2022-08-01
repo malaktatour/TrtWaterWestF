@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "521575518826",
+    "firebase_url": "https://waterwest-v1-default-rtdb.firebaseio.com",
+    "project_id": "waterwest-v1",
+    "storage_bucket": "waterwest-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521575518826:android:35fe4f9457a98a78bab013",
+        "android_client_info": {
+          "package_name": "com.example.waterwest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521575518826-naakc9t1h7b6in3mgpanfk7gslmtagq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvGlW7080ms_7M9baIi7nvm7AxB2_cdNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521575518826-naakc9t1h7b6in3mgpanfk7gslmtagq9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521575518826:android:932be7bb73d36a1fbab013",
+        "android_client_info": {
+          "package_name": "com.example.waterwestfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521575518826-naakc9t1h7b6in3mgpanfk7gslmtagq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvGlW7080ms_7M9baIi7nvm7AxB2_cdNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521575518826-naakc9t1h7b6in3mgpanfk7gslmtagq9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
