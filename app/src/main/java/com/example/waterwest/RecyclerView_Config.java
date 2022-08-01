@@ -33,11 +33,11 @@ public class RecyclerView_Config {
                     inflate(R.layout.activity_main, parent, false));
 
             //Finding relevant fields in Xml file
-            /*
+            /*waterLevel = itemView.findViewById(R.id.todayL);
             valueOne = itemView.findViewById(R.id.firstChild);
             valueTwo = itemView.findViewById(R.id.secondChild);
-            valueThree = itemView.findViewById(R.id.waterusage);*/
-           waterLevel = itemView.findViewById(R.id.todayL);
+            */
+            valueThree = itemView.findViewById(R.id.todayL);
         }
     
         public void bind(Day day, String key){
@@ -50,9 +50,9 @@ public class RecyclerView_Config {
             //Setting values on Xml file
            // valueOne.setText(justice.getKey());
             // comment contrl
-            waterLevel.setText(justice.getValue());
+            //waterLevel.setText(justice.getValue());
             //waterLevel.setText(day.getDate());
-           // valueThree.setText(Double.toString(day.GetUsedAmount()));
+           valueThree.setText(Double.toString(day.GetUsedAmount()));
 
             //ignore
             this.key = key;
