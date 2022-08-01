@@ -35,28 +35,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.01" />
+        app:layout_constraintGuide_percent="0.03" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/endlogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.36" />
+        app:layout_constraintGuide_percent="0.38" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/bottomlogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.1" />
+        app:layout_constraintGuide_percent="0.11" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/toplogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.01" />
+        app:layout_constraintGuide_percent="0.02" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -99,6 +99,16 @@
         app:layout_constraintTop_toTopOf="@+id/topback1"
         app:layout_constraintVertical_bias="0.0" />
 
+    <ImageView
+        android:id="@+id/backkinner3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rec_darkbluegray"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomback12"
+        app:layout_constraintEnd_toEndOf="@+id/endback12"
+        app:layout_constraintStart_toStartOf="@+id/startback12"
+        app:layout_constraintTop_toTopOf="@+id/topback12" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/startback1"
         android:layout_width="wrap_content"
@@ -127,15 +137,352 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.58" />
 
+    <TextView
+        android:id="@+id/graphtext1"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/agrandir"
+        android:text="________________________________________________   60L"
+        android:textColor="@color/black_palette"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/bottomwatertank1"
+        app:layout_constraintEnd_toEndOf="@id/watertankend1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/watertankstart1"
+        app:layout_constraintTop_toTopOf="@+id/topwatertank1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/watertankstart1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/watertankend1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topwatertank1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.78" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomwatertank1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <TextView
+        android:id="@+id/graphtext2"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/agrandir"
+        android:text="________________________________________________   70L"
+        android:textColor="@color/black_palette"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/bottomwatertank2"
+        app:layout_constraintEnd_toEndOf="@id/watertankend1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/watertankstart1"
+        app:layout_constraintTop_toTopOf="@+id/topwatertank2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topwatertank2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomwatertank2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.78" />
+
+    <TextView
+        android:id="@+id/graphtext3"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/agrandir"
+        android:text="________________________________________________   80L"
+        android:textColor="@color/black_palette"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/bottomwatertank3"
+        app:layout_constraintEnd_toEndOf="@id/watertankend1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/watertankstart1"
+        app:layout_constraintTop_toTopOf="@+id/topwatertank3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topwatertank3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomwatertank3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.73" />
+
+    <TextView
+        android:id="@+id/graphtext4"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/agrandir"
+        android:text="________________________________________________"
+        android:textColor="@color/black_palette"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/bottomwatertank4"
+        app:layout_constraintEnd_toEndOf="@id/watertankend1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/watertankstart1"
+        app:layout_constraintTop_toTopOf="@+id/topwatertank4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topwatertank4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomwatertank4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
     <ImageView
-        android:id="@+id/backkinner2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/rec_darkbluegray"
+        android:id="@+id/graph_bar1"
+        android:layout_width="20dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rec_graph"
         app:layout_constraintBottom_toBottomOf="@+id/bottomback12"
-        app:layout_constraintEnd_toEndOf="@+id/endback12"
-        app:layout_constraintStart_toStartOf="@+id/startback12"
-        app:layout_constraintTop_toTopOf="@+id/topback12" />
+        app:layout_constraintEnd_toEndOf="@+id/end_graph1"
+        app:layout_constraintStart_toStartOf="@+id/start_graph1"
+        app:layout_constraintTop_toTopOf="@+id/top_graph1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_graph1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_graph1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_graph1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <ImageView
+        android:id="@+id/graph_bar2"
+        android:layout_width="20dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rec_graph"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomback12"
+        app:layout_constraintEnd_toEndOf="@+id/end_graph2"
+        app:layout_constraintStart_toStartOf="@+id/start_graph2"
+        app:layout_constraintTop_toTopOf="@+id/top_graph2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_graph2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_graph2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_graph2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.39" />
+
+    <ImageView
+        android:id="@+id/graph_bar3"
+        android:layout_width="20dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rec_graph"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomback12"
+        app:layout_constraintEnd_toEndOf="@+id/end_graph3"
+        app:layout_constraintStart_toStartOf="@+id/start_graph3"
+        app:layout_constraintTop_toTopOf="@+id/top_graph3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_graph3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_graph3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_graph3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.61" />
+
+    <ImageView
+        android:id="@+id/graph_bar4"
+        android:layout_width="20dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rec_graph"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomback12"
+        app:layout_constraintEnd_toEndOf="@+id/end_graph4"
+        app:layout_constraintStart_toStartOf="@+id/start_graph4"
+        app:layout_constraintTop_toTopOf="@+id/top_graph4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_graph4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_graph4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_graph4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <ImageView
+        android:id="@+id/graph_bar5"
+        android:layout_width="20dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rec_graph"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomback12"
+        app:layout_constraintEnd_toEndOf="@+id/end_graph5"
+        app:layout_constraintStart_toStartOf="@+id/start_graph5"
+        app:layout_constraintTop_toTopOf="@+id/top_graph5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_graph5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_graph5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_graph5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.05" />
+
+    <ImageView
+        android:id="@+id/graph_bar6"
+        android:layout_width="20dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rec_graph"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomback12"
+        app:layout_constraintEnd_toEndOf="@+id/end_graph6"
+        app:layout_constraintStart_toStartOf="@+id/start_graph6"
+        app:layout_constraintTop_toTopOf="@+id/top_graph6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_graph6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_graph6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_graph6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.27" />
+
+    <ImageView
+        android:id="@+id/graph_bar7"
+        android:layout_width="20dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rec_graph"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomback12"
+        app:layout_constraintEnd_toEndOf="@+id/end_graph7"
+        app:layout_constraintStart_toStartOf="@+id/start_graph7"
+        app:layout_constraintTop_toTopOf="@+id/top_graph7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_graph7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_graph7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_graph7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.49" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/startback12"
@@ -302,6 +649,7 @@
 
     <ImageView
         android:id="@+id/stamm2"
+        android:clickable="true"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/oval"
@@ -326,6 +674,7 @@
 
     <ImageView
         android:id="@+id/stamm3"
+        android:clickable="true"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/oval"
@@ -378,18 +727,46 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
         android:fontFamily="@font/agrandir"
         android:text="62L"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="@id/bottomwatertank"
-        app:layout_constraintEnd_toEndOf="@id/watertankend"
+        android:textColor="@color/fuzzy_wuzzy"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="@id/bottomlitersused"
+        app:layout_constraintEnd_toEndOf="@id/endlitersused"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/watertankstart"
-        app:layout_constraintTop_toTopOf="@+id/topwatertank"
+        app:layout_constraintStart_toStartOf="@id/startlitersused"
+        app:layout_constraintTop_toTopOf="@+id/toplitersused"
         app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/toplitersused"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endlitersused"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startlitersused"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomlitersused"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/watertankstart"
@@ -418,23 +795,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.38" />
-
-
-    <TextView
-        android:id="@+id/LitersRemaining"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:fontFamily="@font/agrandir"
-        android:gravity="center"
-        android:text="You Have 180L Remaining"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/remainingbottom"
-        app:layout_constraintEnd_toEndOf="@id/remainingend"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@id/remainingstart"
-        app:layout_constraintTop_toTopOf="@id/remainingtop"
-        app:layout_constraintVertical_bias="1.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/remainingstart"

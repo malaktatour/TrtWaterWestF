@@ -196,28 +196,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.01" />
+        app:layout_constraintGuide_percent="0.03" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/endlogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.36" />
+        app:layout_constraintGuide_percent="0.38" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/bottomlogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.1" />
+        app:layout_constraintGuide_percent="0.11" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/toplogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.01" />
+        app:layout_constraintGuide_percent="0.02" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -264,11 +264,25 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/home"
-        app:layout_constraintBottom_toBottomOf="@id/bottomalertbtn"
+        app:layout_constraintBottom_toBottomOf="@id/bottomalertbtn3"
         app:layout_constraintEnd_toEndOf="@+id/endwaterusagebtn1"
         app:layout_constraintStart_toStartOf="@+id/startwaterusagebtn1"
-        app:layout_constraintTop_toTopOf="@+id/topalertbtn"
+        app:layout_constraintTop_toTopOf="@+id/topalertbtn3"
         />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomalertbtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.985" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topalertbtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.915" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/startwaterusagebtn1"

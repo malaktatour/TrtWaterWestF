@@ -13,10 +13,10 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 Button AlertBtn;
+TextView WaterUsageBtn;
 //new.
 private RecyclerView mRecycler;
 //done.
-TextView WaterUsageBtn;
     androidx.constraintlayout.widget.Guideline topwater;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,12 +52,12 @@ TextView WaterUsageBtn;
       //  topwater.setGuidelinePercent((float) 0.3); // to raise water in the tank
         WaterUsageBtn = findViewById(R.id.WaterUsageBtn);
         AlertBtn = findViewById(R.id.AlertBtn);
-AlertBtn.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Intent i = new Intent(getApplicationContext(),alerts_activity.class);
-        startActivity(i);
-        finish();
+        AlertBtn.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+             Intent i = new Intent(getApplicationContext(),alerts_activity.class);
+             startActivity(i);
+             finish();
 
     }
 });
