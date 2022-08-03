@@ -14,8 +14,10 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 Button AlertBtn;
 TextView WaterUsageBtn;
+TextView WaterUsage;
+TextView Wateramount;
 //new.
-private RecyclerView mRecycler;
+//private RecyclerView mRecycler;
 //done.
     androidx.constraintlayout.widget.Guideline topwater;
     @Override
@@ -23,11 +25,19 @@ private RecyclerView mRecycler;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //new.
-        mRecycler = (RecyclerView) findViewById(R.id.recyclerView_days);
+        //mRecycler = (RecyclerView) findViewById(R.id.recyclerView_days);
+        WaterUsage=findViewById(R.id.todayL);
+        Wateramount=findViewById(R.id.LitersRemaining1);
         new FirebaseDatabaseHelper().readDays(new FirebaseDatabaseHelper.DataStatus() {
             @Override
             public void DataIsLoaded(List<Day> days, List<String> keys) {
-                new RecyclerView_Config().setConfig(mRecycler, MainActivity.this, days, keys);
+                //new RecyclerView_Config().setConfig(mRecycler, MainActivity.this, days, keys);
+
+                Day latestday= days.get(days.size()-1);
+                String wateramount1=latestday.getTimes().get(latestday.getTimes().size()-1).getValue();
+                Wateramount.setText(wateramount1);
+                WaterUsage.setText(Double.toString(latestday.GetUsedAmount()));
+
 
             }
 
