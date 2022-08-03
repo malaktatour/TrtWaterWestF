@@ -94,10 +94,10 @@
         android:background="@drawable/rec_midnighteaglegreen"
         app:layout_constraintBottom_toBottomOf="@+id/bottomback1"
         app:layout_constraintEnd_toEndOf="@+id/endback1"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/startback1"
         app:layout_constraintTop_toTopOf="@+id/topback1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/backkinner3"
@@ -157,7 +157,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.07" />
+        app:layout_constraintGuide_percent="0.1" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/watertankend1"
@@ -258,7 +258,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.83" />
+        app:layout_constraintGuide_end="124dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/bottomwatertank4"
@@ -272,10 +272,12 @@
         android:layout_width="20dp"
         android:layout_height="100dp"
         android:background="@drawable/rec_graph"
-        app:layout_constraintBottom_toBottomOf="@+id/bottomback12"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom7"
         app:layout_constraintEnd_toEndOf="@+id/end_graph1"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/start_graph1"
-        app:layout_constraintTop_toTopOf="@+id/top_graph1" />
+        app:layout_constraintTop_toTopOf="@+id/top_graph1"
+        app:layout_constraintVertical_bias="1.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/top_graph1"
@@ -303,10 +305,12 @@
         android:layout_width="20dp"
         android:layout_height="100dp"
         android:background="@drawable/rec_graph"
-        app:layout_constraintBottom_toBottomOf="@+id/bottomback12"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom7"
         app:layout_constraintEnd_toEndOf="@+id/end_graph2"
+        app:layout_constraintHorizontal_bias="0.672"
         app:layout_constraintStart_toStartOf="@+id/start_graph2"
-        app:layout_constraintTop_toTopOf="@+id/top_graph2" />
+        app:layout_constraintTop_toTopOf="@+id/top_graph2"
+        app:layout_constraintVertical_bias="1.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/top_graph2"
@@ -334,10 +338,12 @@
         android:layout_width="20dp"
         android:layout_height="100dp"
         android:background="@drawable/rec_graph"
-        app:layout_constraintBottom_toBottomOf="@+id/bottomback12"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom7"
         app:layout_constraintEnd_toEndOf="@+id/end_graph3"
+        app:layout_constraintHorizontal_bias="0.585"
         app:layout_constraintStart_toStartOf="@+id/start_graph3"
-        app:layout_constraintTop_toTopOf="@+id/top_graph3" />
+        app:layout_constraintTop_toTopOf="@+id/top_graph3"
+        app:layout_constraintVertical_bias="1.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/top_graph3"
@@ -367,8 +373,10 @@
         android:background="@drawable/rec_graph"
         app:layout_constraintBottom_toBottomOf="@+id/bottomback12"
         app:layout_constraintEnd_toEndOf="@+id/end_graph4"
+        app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="@+id/start_graph4"
-        app:layout_constraintTop_toTopOf="@+id/top_graph4" />
+        app:layout_constraintTop_toTopOf="@+id/top_graph4"
+        app:layout_constraintVertical_bias="0.475" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/top_graph4"
@@ -398,8 +406,10 @@
         android:background="@drawable/rec_graph"
         app:layout_constraintBottom_toBottomOf="@+id/bottomback12"
         app:layout_constraintEnd_toEndOf="@+id/end_graph5"
+        app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="@+id/start_graph5"
-        app:layout_constraintTop_toTopOf="@+id/top_graph5" />
+        app:layout_constraintTop_toTopOf="@+id/top_graph5"
+        app:layout_constraintVertical_bias="0.524" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/top_graph5"
@@ -429,8 +439,10 @@
         android:background="@drawable/rec_graph"
         app:layout_constraintBottom_toBottomOf="@+id/bottomback12"
         app:layout_constraintEnd_toEndOf="@+id/end_graph6"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="@+id/start_graph6"
-        app:layout_constraintTop_toTopOf="@+id/top_graph6" />
+        app:layout_constraintTop_toTopOf="@+id/top_graph6"
+        app:layout_constraintVertical_bias="0.508" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/top_graph6"
@@ -460,8 +472,10 @@
         android:background="@drawable/rec_graph"
         app:layout_constraintBottom_toBottomOf="@+id/bottomback12"
         app:layout_constraintEnd_toEndOf="@+id/end_graph7"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="@+id/start_graph7"
-        app:layout_constraintTop_toTopOf="@+id/top_graph7" />
+        app:layout_constraintTop_toTopOf="@+id/top_graph7"
+        app:layout_constraintVertical_bias="0.524" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/top_graph7"
@@ -585,6 +599,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
+        android:clickable="true"
         android:id="@+id/AlertBtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -611,6 +626,7 @@
         app:layout_constraintGuide_percent="0.35" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:clickable="true"
         android:id="@+id/homeBtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -649,10 +665,10 @@
 
     <ImageView
         android:id="@+id/stamm2"
-        android:clickable="true"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/oval"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="@id/bottomalertbtn"
         app:layout_constraintEnd_toStartOf="@+id/endalert"
         app:layout_constraintStart_toStartOf="@+id/startalert"
@@ -674,10 +690,10 @@
 
     <ImageView
         android:id="@+id/stamm3"
-        android:clickable="true"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/oval"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="@id/bottomhomebtn"
         app:layout_constraintEnd_toStartOf="@+id/endhomebtn"
         app:layout_constraintStart_toStartOf="@+id/starthomebtn"
@@ -720,7 +736,7 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@id/bottomwatertank"
         app:layout_constraintEnd_toEndOf="@id/watertankend"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@id/watertankstart"
         app:layout_constraintTop_toTopOf="@+id/topwatertank"
         app:layout_constraintVertical_bias="0.0" />
@@ -759,7 +775,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.4" />
+        app:layout_constraintGuide_percent="0.32" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/bottomlitersused"
@@ -773,7 +789,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.13" />
+        app:layout_constraintGuide_percent="0.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/watertankend"
@@ -830,7 +846,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.23" />
+        app:layout_constraintGuide_percent="0.24" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/tankend"
@@ -838,12 +854,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.8" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/tanktop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.2" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/tankbottom"
         android:layout_width="wrap_content"
@@ -865,12 +883,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.71" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/watertop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.35" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/waterbottom"
         android:layout_width="wrap_content"
@@ -908,4 +928,10 @@
         app:layout_constraintGuide_percent="0.78" />
 
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.83" />
 </androidx.constraintlayout.widget.ConstraintLayout>

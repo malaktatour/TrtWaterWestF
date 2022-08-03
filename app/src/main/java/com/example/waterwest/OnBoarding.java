@@ -63,13 +63,11 @@ public class OnBoarding extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                img.setVisibility(View.VISIBLE);
-
-
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class); // open new activity
                 ActivityOptionsCompat options1 = ActivityOptionsCompat.
                         makeSceneTransitionAnimation(OnBoarding.this, img, "apple");
                 startActivity(intent,options1.toBundle()); // open new activity with transition
+                img.setVisibility(View.VISIBLE);
                 finish();
 
             }

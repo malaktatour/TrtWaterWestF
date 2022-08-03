@@ -10,13 +10,14 @@
         android:id="@+id/slidingImage"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:src="@drawable/photo_4"
+        android:transitionName="idk"
         app:layout_constraintBottom_toBottomOf="@+id/bottom"
         app:layout_constraintEnd_toEndOf="@+id/end"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/start"
-        android:transitionName="idk"
         app:layout_constraintTop_toTopOf="@+id/top"
-        android:src="@drawable/photo_4"
-        />
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:layout_width="wrap_content"
