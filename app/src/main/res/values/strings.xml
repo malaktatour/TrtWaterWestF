@@ -3,15 +3,15 @@
 
     --App intro--
     <string name="first_slide_title" translatable="false">Title 1</string>
-    <string name="second_slide_title" translatable="false">Title 2</string>
-    <string name="third_slide_title" translatable="false">Title 3</string>
-    <string name="fourth_slide_title" translatable="false">Title 4</string>
+    <string name="second_slide_title" translatable="false">Welcome</string>
+    <string name="third_slide_title" translatable="false">How to Use </string>
+    <string name="fourth_slide_title" translatable="false">  </string>
 
     --Descriptions--
     <string name="first_slide_desc" translatable="false">desc 1</string>
-    <string name="second_slide_desc" translatable="false">desc 2</string>
-    <string name="third_slide_desc" translatable="false">desc 3</string>
-    <string name="fourth_slide_desc" translatable="false">desc 4</string>
+    <string name="second_slide_desc" translatable="false">Hello! Welcome to the WaterWest App! In here you can monitor your water supply in your water tank!</string>
+    <string name="third_slide_desc" translatable="false">In the main page you can find the amount of water you have in your tank and your daily usage, as well as you can go to your alerts or look at your usage history</string>
+    <string name="fourth_slide_desc" translatable="false">   </string>
 
 
     --Button--

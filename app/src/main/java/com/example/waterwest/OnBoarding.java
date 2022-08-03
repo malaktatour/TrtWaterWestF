@@ -86,9 +86,9 @@ public class OnBoarding extends AppCompatActivity {
 
     @SuppressLint("ResourceAsColor")
     private void AddDots(int p){
-        dotsLayout = new TextView[4];
+        dotsLayout = new TextView[3];
         dots.removeAllViews();
-        for(int i =0 ;i <4;i++)
+        for(int i =0 ;i <3;i++)
         {
             dotsLayout[i] = new TextView(this);
             dotsLayout[i].setText(Html.fromHtml("&#8226;"));
@@ -107,7 +107,7 @@ public class OnBoarding extends AppCompatActivity {
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
-            if(currentPos == 4)
+            if(currentPos == 3)
                 img.setVisibility(View.INVISIBLE);
         }
 
@@ -115,21 +115,15 @@ public class OnBoarding extends AppCompatActivity {
         public void onPageSelected(int position) {
             AddDots(position);
             currentPos = position;
-            if(position == 0)
-            {
+           if(position ==0){
                 Lets.setVisibility(View.INVISIBLE);
                 img.setVisibility(View.INVISIBLE);
 
-            }
-            else if(position ==1){
+            }else if(position ==1){
                 Lets.setVisibility(View.INVISIBLE);
                 img.setVisibility(View.INVISIBLE);
 
-            }else if(position ==2){
-                Lets.setVisibility(View.INVISIBLE);
-                img.setVisibility(View.INVISIBLE);
-
-            }else if(position ==3)
+            }else if(position ==2)
             {
                 animation = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.bottom_anim);
                 Lets.setAnimation(animation);

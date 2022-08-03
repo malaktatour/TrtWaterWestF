@@ -20,7 +20,6 @@ public class SliderAdapter extends PagerAdapter {
     }
 
     int images[] = {
-            R.drawable.photo_1,
             R.drawable.photo_2,
             R.drawable.photo_3,
             R.drawable.photo_4
@@ -28,14 +27,12 @@ public class SliderAdapter extends PagerAdapter {
 };
 
     int headings[] = {
-            R.string.first_slide_title,
             R.string.second_slide_title,
             R.string.third_slide_title,
             R.string.fourth_slide_title
 
     };
-    int descriptions[] = {
-            R.string.first_slide_desc,
+    int descriptions[] ={
     R.string.second_slide_desc,
     R.string.third_slide_desc,
     R.string.fourth_slide_desc
@@ -45,7 +42,7 @@ public class SliderAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return 3;
     }
 
     @Override
