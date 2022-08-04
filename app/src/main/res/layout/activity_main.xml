@@ -496,7 +496,7 @@
         app:layout_constraintBottom_toBottomOf="@id/waterbottom"
         app:layout_constraintEnd_toEndOf="@id/waterend"
         app:layout_constraintStart_toStartOf="@id/waterstart"
-        app:layout_constraintTop_toTopOf="@id/watertop"
+        app:layout_constraintTop_toBottomOf="@id/watertop"
         />
 
     <androidx.constraintlayout.widget.Guideline
