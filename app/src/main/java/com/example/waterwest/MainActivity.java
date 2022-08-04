@@ -1,6 +1,7 @@
 package com.example.waterwest;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.Guideline;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -17,6 +18,7 @@ Button AlertBtn;
 TextView WaterUsageBtn;
 TextView WaterUsage;
 TextView Wateramount;
+Guideline tankguideline;
 //new.
 //private RecyclerView mRecycler;
 //done.
@@ -29,6 +31,7 @@ TextView Wateramount;
         //mRecycler = (RecyclerView) findViewById(R.id.recyclerView_days);
         WaterUsage=findViewById(R.id.todayL);
         Wateramount=findViewById(R.id.LitersRemaining1);
+        tankguideline=findViewById(R.id.watertop);
         new FirebaseDatabaseHelper().readDays(new FirebaseDatabaseHelper.DataStatus() {
             @Override
             public void DataIsLoaded(List<Day> days, List<String> keys) {
@@ -38,7 +41,8 @@ TextView Wateramount;
                 Double wateramount1= latestday.getTimes().get(latestday.getTimes().size()-1).getValue();
                 Wateramount.setText(wateramount1.toString());
                 WaterUsage.setText(new DecimalFormat("##.##").format(latestday.GetUsedAmount()));
-
+                tankguideline.setGuidelinePercent((float) (wateramount1*(1-0.28))/20);
+                //(float)(((20-wateramount1)*0.28)/20)(wateramount1*(1-0.28))/20)
 
             }
 
