@@ -41,7 +41,7 @@ Guideline tankguideline;
                 Double wateramount1= latestday.getTimes().get(latestday.getTimes().size()-1).getValue();
                 Wateramount.setText(wateramount1.toString());
                 WaterUsage.setText(new DecimalFormat("##.##").format(latestday.GetUsedAmount()));
-                tankguideline.setGuidelinePercent((float) (wateramount1*(1-0.28))/20);
+                tankguideline.setGuidelinePercent((float) (1-(wateramount1*(1-0.28))/20));
                 //(float)(((20-wateramount1)*0.28)/20)(wateramount1*(1-0.28))/20)
 
             }
