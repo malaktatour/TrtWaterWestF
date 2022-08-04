@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,9 +35,9 @@ TextView Wateramount;
                 //new RecyclerView_Config().setConfig(mRecycler, MainActivity.this, days, keys);
 
                 Day latestday= days.get(days.size()-1);
-                String wateramount1=latestday.getTimes().get(latestday.getTimes().size()-1).getValue();
-                Wateramount.setText(wateramount1);
-                WaterUsage.setText(Double.toString(latestday.GetUsedAmount()));
+                Double wateramount1= latestday.getTimes().get(latestday.getTimes().size()-1).getValue();
+                Wateramount.setText(wateramount1.toString());
+                WaterUsage.setText(new DecimalFormat("##.##").format(latestday.GetUsedAmount()));
 
 
             }

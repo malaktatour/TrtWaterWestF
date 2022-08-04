@@ -43,9 +43,9 @@ public class RecyclerView_Config {
         public void bind(Day day, String key){
 
             //List containing all values of the branch
-            ArrayList<Map.Entry<String, String>> nth = day.getTimes();
+            ArrayList<Map.Entry<String, Double>> nth = day.getTimes();
             //getting the last child on the branch
-            Map.Entry<String, String> justice = nth.get(nth.size() - 1);
+            Map.Entry<String, Double> justice = nth.get(nth.size() - 1);
 
             //Setting values on Xml file
            // valueOne.setText(justice.getKey());

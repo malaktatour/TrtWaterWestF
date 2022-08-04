@@ -9,6 +9,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class FirebaseDatabaseHelper {
@@ -24,13 +25,14 @@ public class FirebaseDatabaseHelper {
         void DataIsDeleted();
 
     }
+    //https://waterwest-default-rtdb.firebaseio.com/
     public FirebaseDatabaseHelper(){
-        DB = FirebaseDatabase.getInstance("https://waterwest-default-rtdb.firebaseio.com/");
-        DBR = DB.getReference("RasberryIds");
+        DB = FirebaseDatabase.getInstance("https://waterwest-v1-default-rtdb.firebaseio.com/");
+        DBR = DB.getReference("RasberryPis");
     }
 
     public void readDays(final DataStatus datastatus){
-        DBR.child("ID").addValueEventListener(new ValueEventListener() {
+        DBR.child("00000000abb1e46e").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 days.clear();
@@ -39,7 +41,7 @@ public class FirebaseDatabaseHelper {
                     keys.add(keyNode.getKey());
 
                     //casting from FirebaseDatabase to Java Class
-                    Day day = keyNode.getValue(Day.class);
+                    Day day = new Day(keyNode.getKey(), (HashMap<String, Double>) keyNode.getValue());
 
                     days.add(day);
                 }

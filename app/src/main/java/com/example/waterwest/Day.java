@@ -1,4 +1,5 @@
 package com.example.waterwest;
+import android.renderscript.Double4;
 import android.widget.Toast;
 
 import androidx.core.app.NotificationCompat;
@@ -13,9 +14,9 @@ import java.util.TreeMap;
 
 public class Day {
     private String date;
-    private HashMap<String, String> Times;
+    private HashMap<String, Double> Times;
 
-    public Day(String date, HashMap<String, String> times) {
+    public Day(String date, HashMap<String, Double> times) {
         this.date = date;
         this.Times = times;
     }
@@ -32,11 +33,11 @@ public class Day {
         this.date = date;
     }
 
-    public ArrayList<Map.Entry<String, String>> getTimes() {
+    public ArrayList<Map.Entry<String, Double>> getTimes() {
 
         return HashMapToArrayList(Times);
     }
-    public  ArrayList<Map.Entry<String, String>> HashMapToArrayList(HashMap<String, String> map){
+    public  ArrayList<Map.Entry<String, Double>> HashMapToArrayList(HashMap<String, Double> map){
 
         //Getting Set of keys from map
         Set<String> keySet = map.keySet();
@@ -45,21 +46,21 @@ public class Day {
         ArrayList<String> listOfKeys = new ArrayList<String>(keySet);
         Collections.sort(listOfKeys);//ask!!
 
-        TreeMap<String, String> sorted = new TreeMap<>();
+        TreeMap<String, Double> sorted = new TreeMap<>();
         sorted.putAll(map);
 
         //Getting Collection of values
-        Collection<String> values = map.values();//here ya nas.
+        Collection<Double> values = map.values();//here ya nas.
 
         //Creating an ArrayList of values
-        ArrayList<String> listOfValues = new ArrayList<String>(values);
+        ArrayList<Double> listOfValues = new ArrayList<Double>(values);
 
         //Getting the Set of entries
-        Set<Map.Entry<String, String>> entrySet = sorted.entrySet();
+        Set<Map.Entry<String, Double>> entrySet = sorted.entrySet();
 
 
         //Creating an ArrayList Of Entry objects
-        ArrayList<Map.Entry<String, String>> listOfEntry = new ArrayList<Map.Entry<String,String>>(entrySet);
+        ArrayList<Map.Entry<String, Double>> listOfEntry = new ArrayList<Map.Entry<String,Double>>(entrySet);
         //Collections.reverse(listOfKeys);
 
         return listOfEntry;
@@ -67,21 +68,21 @@ public class Day {
 
     public double GetUsedAmount ()
     {
-        HashMap<String, String> map = Times;
+        HashMap<String, Double> map = Times;
         Set<String> keySet = map.keySet();
 
         //Creating an ArrayList of keys
         ArrayList<String> listOfKeys = new ArrayList<String>(keySet);
         Collections.sort(listOfKeys);//ask!!
 
-        TreeMap<String, String> sorted = new TreeMap<>();
+        TreeMap<String, Double> sorted = new TreeMap<>();
         sorted.putAll(map);
 
         //Getting Collection of values
-        Collection<String> values = map.values();
+        Collection<Double> values = map.values();
 
         //Creating an ArrayList of values
-        ArrayList<String> listOfValues = new ArrayList<String>();
+        ArrayList<Double> listOfValues = new ArrayList<Double>();
 
         for (int i=0;i<listOfKeys.size();i++)
         {
@@ -90,11 +91,12 @@ public class Day {
 
 
         double c=0;
-        for (int i=0;i<listOfValues.size()-1;i++)
-        {
-            if(ToDouble(listOfValues.get(i))-ToDouble(listOfValues.get(i+1))>0)
-                c+=ToDouble(listOfValues.get(i))-ToDouble(listOfValues.get(i+1));
+        if (listOfValues.size()>1) {
+            for (int i = 0; i < listOfValues.size() - 1; i++) {
+                if (listOfValues.get(i) - listOfValues.get(i + 1) > 0)
+                    c += listOfValues.get(i) - listOfValues.get(i + 1);
 
+            }
         }
         return c;
 
@@ -127,7 +129,7 @@ public class Day {
     }
 
 
-    public void setTimes(HashMap<String, String> times) {
+    public void setTimes(HashMap<String, Double> times) {
         this.Times = times;
     }
 }
