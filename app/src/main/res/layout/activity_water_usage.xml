@@ -142,7 +142,7 @@
         android:layout_width="400dp"
         android:layout_height="30dp"
         android:fontFamily="@font/agrandir"
-        android:text="________________________________________________   60L"
+        android:text="________________________________________________   10L"
         android:textColor="@color/black_palette"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@id/bottomwatertank1"
@@ -185,7 +185,7 @@
         android:layout_width="400dp"
         android:layout_height="30dp"
         android:fontFamily="@font/agrandir"
-        android:text="________________________________________________   70L"
+        android:text="________________________________________________   15L"
         android:textColor="@color/black_palette"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@id/bottomwatertank2"
@@ -214,7 +214,7 @@
         android:layout_width="400dp"
         android:layout_height="30dp"
         android:fontFamily="@font/agrandir"
-        android:text="________________________________________________   80L"
+        android:text="________________________________________________   20L"
         android:textColor="@color/black_palette"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@id/bottomwatertank3"
@@ -904,7 +904,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.2" />
+        app:layout_constraintGuide_percent="0.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/todayend"
