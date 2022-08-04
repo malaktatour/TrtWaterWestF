@@ -54,9 +54,9 @@ public class water_usage extends AppCompatActivity {
                 for(int i=0;i< days.size()&&i<7;i++)
                 {
                     if(days.size()>=7)
-                        WU[i].setGuidelinePercent((float) (1-(days.get(days.size()-7+i).GetUsedAmount()*(0.7))/20));
+                        WU[i].setGuidelinePercent((float) (0.83-((days.get(days.size()-7+i).GetUsedAmount()/20)*0.13)));
                     else
-                        WU[i].setGuidelinePercent((float) (1-(days.get(i).GetUsedAmount()*(0.7))/20));
+                        WU[i].setGuidelinePercent((float) (0.83-((days.get(i).GetUsedAmount()/20)*0.13)));;
                 }
                 //.setGuidelinePercent((float) (wateramount1*(1-0.28))/20);(days.get(i).GetUsedAmount()*(1-0.475))/20
 
